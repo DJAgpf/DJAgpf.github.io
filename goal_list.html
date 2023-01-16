@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="main.js"></script>
+        <title>Goal list</title>
+    </head>
+    <body onload="addRow()">
+        <header class="header">
+            <h1>
+                My Goals
+            </h1>
+        </header> 
+        <section class="list">
+            <table id="goals">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>SMART description</th>
+                        <th>Due date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tblBody">
+                    <tr id="content" style ="display: none;">
+                        <td><input type="text" id='name' class="text goalName inputEdit" placeholder="Name of the goal" /></td>
+                        <td><input type="text" id='desc' class="text smartDesc inputEdit" placeholder="Description" /></td>
+                        <td><input type="date" id='date' class="text dueDate inputEdit"/></td>
+                        <td class="actions">
+                            <button class="button" onclick="toggleModify(event)">Save</button>
+                            <button class="button" onclick="removeRow(this)">Delete</button>
+                            <button class="button" onclick="addTask(event)">Add Target</button>
+                        </td>
+                    </tr>
+                    <tr id="addTask" style="display: none;">
+                        <td><input type="text" id="taskName" class="text taskName inputEdit" placeholder="Description"></td>
+                        <td><input type="text" id="taskGoal" class="text taskGoal inputEdit" placeholder="Target"></td>
+                        <td><input type="text" id="taskProgress" class="text taskProgress inputEdit" placeholder="Progress"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="newGoal" class ="actionButton" onclick="addRow();">Add new Goal</button>
+        </section>
+    </body>
+</html>
