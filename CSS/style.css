@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 0px;
+}
+form{
+    text-align: center;
+    
+}
+a{
+    font-size: 15px;
+}
+input{
+    width: 220px;
+    padding: 5px 7px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 2px;
+   
+}
+.header{
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+textarea{
+    border-radius: 10px;
+    width: 220px;
+}
+hr{
+    width: 220px;
+}
+
+h4{
+    text-align: center;
+    font-style: italic;
+    margin-top: 0px;
+    font-size: small;
+    margin-bottom: 0px;
+}
+
+.button, .hidden button {
+    flex: 2;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.hidden button{
+    display: none;
+}
+.text {
+    border: none;
+    appearance: none;
+    outline: none;
+    background: none;
+
+}
+th {
+    text-align: left;
+}
+
+.inputEdit {
+    border: 1px solid grey;
+}
+.taskGoal, .taskProgress{
+    width: 60px;
+}
+th{
+    border-bottom: 1px solid black;
+}
+td{
+    border-bottom: 1px solid black;
+
+}
+
+#newGoal{
+    margin: 5px;
+}
+section{
+    margin-left: 5px;
+}
